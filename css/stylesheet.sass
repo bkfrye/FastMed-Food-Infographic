@@ -1,0 +1,120 @@
+@import "bourbon"
+@import "../bower_components/foundation/scss/foundation/components/grid"
+
+
+$purple : #474398
+$orange : #f15b29
+$yellow : #ffb033
+$navy: #24234b
+$black : #121125
+
+
+
+html,
+body 
+    width: 100%
+    height: 100%
+    font-family: 'proxima_nova_rgregular', Helvetica, Arial, "Lucida Grande", sans-serif
+    
+html, body, h1, h2, h3, h4, h5, h6, p, section, div
+    padding: 0
+    margin: 0
+.container
+    width: 91%
+    display: block
+    margin: 0 auto
+
+section
+    height: 100vh
+    margin: 0
+    position: fixed
+    padding: 14px
+    
+    h2
+        font-size: 2.6em
+        
+    p
+        font-size: 1.4em
+        
+        
+    .arrow-nav
+        text-align: center
+        position: absolute
+        bottom: 32px
+        left: 50%
+        
+        
+    
+    
+    
+.light
+    background-color: $orange
+    
+    h2
+        color: $purple
+
+.dark
+    background-color: $purple
+    
+    h2
+        color: $orange
+        
+    p
+        color: #fff
+        
+        
+#home 
+    position: relative
+    display:block
+    background: #fff
+    z-index: 10
+    
+    #logo
+        max-width:250px
+        height: auto
+        position: absolute
+        top: 3em
+        left: 3em
+        
+    #home-content
+        text-align: center
+        position: relative
+        padding-top: 120px
+        
+        
+    #ribbon  
+        background:#484697                
+        display:inline-block
+        padding:14px 30px
+        font-size:30px
+        position:relative
+        margin: 10% auto 0 auto
+        color:#fff
+        text-align: center
+    
+    #ribbon:before
+        content:""
+        position:absolute
+        border-width:28px 35px 28px 25px
+        border-style:solid
+        border-color:#24234b
+        border-left-color:transparent
+        border-right-color:#121125
+        width:22px
+        top:27px
+        left:-47px
+        z-index:-1
+    
+    #ribbon:after
+        content:""
+        width:22px
+        height:0
+        position:absolute
+        border-style:solid
+        border-color:#24234b
+        border-width:28px 25px 28px 35px
+        border-right-color:transparent
+        border-left-color:#121125
+        top:27px
+        right:-47px
+        z-index:-1
