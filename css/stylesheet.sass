@@ -20,6 +20,22 @@ html, body, h1, h2, h3, h4, h5, h6, p, section, div
     padding: 0
     margin: 0
     
+.header
+    position: fixed
+    top: 0
+    width: 100%
+    z-index: 999999999
+    background-color: rgba(255,255,255,.75)
+    
+    #logo
+        background-image:url(../img/fm-logo.png)
+        background-repeat: no-repeat
+        background-position: center center
+        height: 70px
+        width: 400px
+        
+        
+    
 .container
     width: 91%
     display: block
@@ -29,13 +45,20 @@ html, body, h1, h2, h3, h4, h5, h6, p, section, div
     @include transform(translateY(-50%))
 
 section
+    position: fixed
+    top: 160px
+    bottom: 0
+    right: 0
+    left: 0
     height: 100vh
     margin: 0
-    position: relative
     padding: 42px 14px
+    z-index: 1
+    
     
     h2
         font-size: 2.6em
+        text-align: center
         
     p
         font-size: 1.4em
@@ -45,6 +68,36 @@ section
         
     .run
         margin-top: 3.6em
+        
+        .run-line
+            
+            .running-man
+                position: relative
+                @include animation(running .8s steps(3) infinite)
+                height: 100px
+                width: 80px
+                
+            @include keyframes (running)
+            from  
+                background-position: center left
+            to
+                background-position: center right
+                
+                
+                
+                
+            .arrow-nav
+                @include animation(pulse 1.2s ease-in-out infinite)
+            
+            @include keyframes(pulse)
+                0%
+                    @include transform(scale(1))
+
+                50%
+                    @include transform(scale(1.2))
+
+                100%
+                    @include transform(scale(1))
         
         
         
@@ -63,19 +116,27 @@ section
         color: $purple
         
     p
+        color: #fff
         
-        span
-            background-color: $purple
-            font-size: .6em
-            padding: 8px
-            border-radius: 6px
-            color: #fff
+    .ingredients
+        background-color: $purple
+        font-size: .6em
+        padding: 8px
+        border-radius: 6px
+        color: #fff
+        max-width: 250px
+        overflow: auto
+        display: block
+        margin: 0 auto
             
     .run-line
 
 
         .running-man
             background-image: url('../img/run-sprite-dark.png')
+            
+    a:link, a:visited
+        color: $purple
 
 
 .dark
@@ -83,67 +144,70 @@ section
     
     h2
         color: $orange
-        
     p
         color: #fff
+
         
-        span
-            background-color: $orange
-            font-size: .6em
-            padding: 8px
-            border-radius: 6px
+        
+    .ingredients
+        background-color: $orange
+        font-size: .6em
+        padding: 8px
+        border-radius: 6px
+        max-width: 250px
+        overflow: auto
+        display: block
+        margin: 0 auto
+        
+
             
     .run-line
 
 
         .running-man
             background-image: url('../img/run-sprite-light.png')
+            
+            
+        
+            
+    a:link, a:visited
+        color: $orange
 
             
-.running-man
-    height: 100px
-    width: 80px
-    @include animation(running .8s steps(3) infinite)
+//.running-man
+//    height: 100px
+//    width: 80px
+//    @include animation(running .8s steps(3) infinite)
             
             
-//@include keyframes (running)
-//    from 0% 
-//        background-position: left center
-//    to 100%
-//        background-position: right center
+@include keyframes (running)
+    from  
+        background-position: center left
+    to
+        background-position: center right
     
 
             
         
         
 #home 
-    position: relative
-    display:block
     background: #fff
     z-index: 10
     margin: 0
     padding: 0
-    
-    #logo
-        max-width:250px
-        height: auto
-        position: absolute
-        top: 1em
-        left: 1em
         
     #home-content
         text-align: center
         position: relative
-        padding-top: 120px
         
         
     #ribbon  
         background:#484697                
         display:inline-block
-        padding:14px 30px
+        padding:14px 30px 
         font-size:30px
         position:relative
-        margin: 10% auto 0 auto
+        margin: 0 auto 60px 
         color:#fff
         text-align: center
     
@@ -173,3 +237,50 @@ section
         top:27px
         right:-47px
         z-index:-1
+        
+    .arrow-nav
+        @include animation(pulse 1.2s ease-in-out infinite)
+            
+    @include keyframes(pulse)
+        0%
+            @include transform(scale(1))
+                
+        50%
+            @include transform(scale(1.2))
+        
+        100%
+            @include transform(scale(1))
+        
+        
+#cereal 
+
+    z-index:9
+
+#coffee 
+
+    z-index:8
+
+#smoothie 
+    z-index:7
+
+#salads 
+    z-index:6
+
+#frozen 
+    z-index:5
+
+#last 
+    z-index:4
+    
+    .arrow-nav
+        @include transform(rotate(180deg))
+
+    #footer 
+
+        height: 70px
+        padding: 10px
+        bottom: 20px
+        //position: absolute
+
+        img 
+            float: left
