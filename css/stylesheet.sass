@@ -70,34 +70,27 @@ section
         margin-top: 3.6em
         
         .run-line
+            background-image: url(../img/track.png)
+            background-repeat: no-repeat
+            background-position: center center
             
             .running-man
                 position: relative
-                @include animation(running .8s steps(3) infinite)
+                @include animation(running 800ms steps(3) infinite)
                 height: 100px
                 width: 80px
-                
-            @include keyframes (running)
-            from  
-                background-position: center left
-            to
-                background-position: center right
-                
-                
-                
-                
-            .arrow-nav
-                @include animation(pulse 1.2s ease-in-out infinite)
-            
-            @include keyframes(pulse)
-                0%
-                    @include transform(scale(1))
 
-                50%
-                    @include transform(scale(1.2))
+        
 
-                100%
-                    @include transform(scale(1))
+    @include keyframes(pulse)
+        0%
+            @include transform(scale(1))
+
+        50%
+            @include transform(scale(1.2))
+
+        100%
+            @include transform(scale(1))
         
         
         
@@ -106,6 +99,7 @@ section
         position: absolute
         bottom: 18px
         left: 50%
+        @include animation(pulse 1.2s ease-in-out infinite)
         
 
     
@@ -173,17 +167,13 @@ section
     a:link, a:visited
         color: $orange
 
-            
-//.running-man
-//    height: 100px
-//    width: 80px
-//    @include animation(running .8s steps(3) infinite)
+
             
             
 @include keyframes (running)
-    from  
+    0%  
         background-position: center left
-    to
+    100%
         background-position: center right
     
 

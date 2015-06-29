@@ -985,22 +985,17 @@ section {
     font-size: 1.4em; }
   section .run {
     margin-top: 3.6em; }
-    section .run .run-line .running-man {
-      position: relative;
-      -webkit-animation: running 0.8s steps(3) infinite;
-      -moz-animation: running 0.8s steps(3) infinite;
-      animation: running 0.8s steps(3) infinite;
-      height: 100px;
-      width: 80px; }
-
-@-webkit-keyframes running {}@-moz-keyframes running {}@keyframes running {}    section .run .run-line from {
-      background-position: center left; }
-    section .run .run-line to {
-      background-position: center right; }
-    section .run .run-line .arrow-nav {
-      -webkit-animation: pulse 1.2s ease-in-out infinite;
-      -moz-animation: pulse 1.2s ease-in-out infinite;
-      animation: pulse 1.2s ease-in-out infinite; }
+    section .run .run-line {
+      background-image: url(../img/track.png);
+      background-repeat: no-repeat;
+      background-position: center center; }
+      section .run .run-line .running-man {
+        position: relative;
+        -webkit-animation: running 800ms steps(3) infinite;
+        -moz-animation: running 800ms steps(3) infinite;
+        animation: running 800ms steps(3) infinite;
+        height: 100px;
+        width: 80px; }
 
 @-webkit-keyframes pulse {
   0% {
@@ -1041,7 +1036,10 @@ section {
     text-align: center;
     position: absolute;
     bottom: 18px;
-    left: 50%; }
+    left: 50%;
+    -webkit-animation: pulse 1.2s ease-in-out infinite;
+    -moz-animation: pulse 1.2s ease-in-out infinite;
+    animation: pulse 1.2s ease-in-out infinite; }
 
 .light {
   background-color: #f15b29; }
@@ -1085,21 +1083,21 @@ section {
     color: #f15b29; }
 
 @-webkit-keyframes running {
-  from {
+  0% {
     background-position: center left; }
-  to {
+  100% {
     background-position: center right; } }
 
 @-moz-keyframes running {
-  from {
+  0% {
     background-position: center left; }
-  to {
+  100% {
     background-position: center right; } }
 
 @keyframes running {
-  from {
+  0% {
     background-position: center left; }
-  to {
+  100% {
     background-position: center right; } }
 
 #home {
