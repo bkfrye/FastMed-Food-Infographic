@@ -17,7 +17,7 @@
     </head>
     <body>
         <div class="header">
-            <a href="index.html"><div id="logo"></div></a>
+            <a href="index.html"><h1 id="logo"><span>FastMed Urgent Care</span></h1></a>
         </div>
         
         <section id="home" data-0="top:0%" data-1000="top:-100%">
@@ -27,7 +27,7 @@
                 <div id="home-content">
                     <h2 id="ribbon">Is Your Food Worth It's Weight In Exercise?</h2>
                     <div>
-                        <a href="#cereal" id="big-runner" data-menu-top="1000"><img src="img/big-run.png"></a>
+                        <a href="#cereal" id="big-runner" data-menu-top="1000"><div class="home-running-man"</div></a>
                     </div>
                 </div>
                 
@@ -35,18 +35,20 @@
             </div>
             <div class="arrow-nav"><a href="#cereal" data-menu-top="1000"><img src="img/arrow-light.png" alt=""></a></div>
         </section>
+        
+        
         <section id="cereal" class="light box" data-0="top:0%" data-1250="top:0%" data-2250="top:-100%" data-3000="">
-            <div class="container"><h2>Breakfast Cereals</h2>
+            <div class="container">
                 <div class="section-title" data-0p="" data-120p="">
                     
                     <div class="row"> 
                         <div class="small-12 medium-6 columns">
-                            
+                            <h2>Breakfast Cereals</h2>
 
                             <p>While many have a reputation as a health food, it pays to read the labels. Breakfast cereals can have as much sugar as candy bars, and <a href="http://www.consumerreports.org/cro/news/2014/12/cereal-portion-control-matters/index.htm" target="_blank">research shows</a> that 92% of people pour far more than one serving into their bowls.</p>      
                         </div>
 
-                        <div class="small-12 medium-5 columns">
+                        <div class="small-12 medium-6 columns div">
                             <div class="section-image" data-0p="" data-120p="">
                                 <img src="img/cereal.png">
                             </div>
@@ -64,8 +66,9 @@
                         </div>
                         <div class="small-12 medium-6 columns">
                             <div class="run-counter">
-                                <h2>Run <span id="count1" data-140p="opacity:1" data-_box-140p="opacity:1">0</span> Miles</h2>
-                                <div class="ingredients"><p>1.5 servings of raisin bran with 1⁄2 cup of 2% milk is 332 calories = 2.5 miles</p></div>
+                                <div class="ingredients"><h3>1.5 servings of raisin bran <br>with 1⁄2 cup of 2% milk</h3> 
+                                    <p>332 calories = Run <span class="count" id="count1">0</span> miles</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -87,7 +90,7 @@
                             <p>What’s the big deal? One cup of coffee or espresso is the same as any other, right? Wrong. A cup of brewed coffee with a splash of skim milk and a bit of sugar is less than 25 calories. A caramel macchiato, on the other hand, will set you back 300 calories.</p>
                         </div>
                         
-                        <div class="small-12 medium-5 columns">
+                        <div class="small-12 medium-6 columns div">
                     
                             <div class="section-image" data-200p="margin-left[swing]:-100%;" data-220p="margin-left[swing]:0;">
                                 <img src="img/coffee.png">
@@ -104,12 +107,15 @@
                         <div class="small-12 medium-6 columns"> 
                             <div class="run-line">
                                 <div class="running-man" id="run2" data-210p="" data-_box-210p=""></div>
+                                
                             </div>
+                            
                         </div>
                         <div class="small-12 medium-6 columns">
                             <div class="run-counter">
-                                <h2>Run <span id="count2">0.0</span> Miles</h2>
-                                <div class="ingredients"><p>20 oz. caramel macchiato from starbucks is 300 calories = 2.2 miles</p></div>
+                                <div class="ingredients"><h3>20 oz. caramel macchiato</h3> 
+                                    <p>300 calories = Run <span class="count" id="count2">0.0</span> miles </p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -133,7 +139,7 @@
                             <p>We get it. The weather’s warming up and you want a refreshing snack or meal. However, many popular brands of smoothie can pack in over 450 calories. Again, you need to check the label – and the serving size – to make sure you’re not sucking down a calorie monster.</p>
                         </div>
                         
-                        <div class="small-12 medium-5 columns">
+                        <div class="small-12 medium-6 columns">
                             <div class="section-image" data-310p="margin-right[swing]:-100%;" data-320p="margin-right[swing]:0;">
                                 <img src="img/smoothie.png">
                             </div>
@@ -146,13 +152,15 @@
                     <div class="run">
                         <div class="small-12 medium-6 columns">
                             <div class="run-line">
-                                <div class="running-man" id="run3" data-310p="" data-_box-310p=""></div>
+                                <div class="running-man" id="run3" data-420p="" data-_box-420p=""></div>
                             </div>
                         </div>
                         <div class="small-12 medium-6 columns">
                             <div class="run-counter">
-                                <h2>Run <span id="count3">0</span> Miles</h2>
-                                <div class="ingredients"><p>28 oz. Strawberries Wild Jamba Juice Smoothie is 470 calories = 3.5 miles</p></div>
+                                <div class="ingredients">
+                                    <h3>28 oz. Strawberries Wild <br>Jamba Juice Smoothie</h3> 
+                                    <p>470 calories = Run <span class="count" id="count3">0</span> miles</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -171,7 +179,7 @@
 
                             <p>While it’s great to see fast food outlets attempting healthy alternatives, many <a href="http://www.businessinsider.com/unhealthy-fast-food-salads-2012-8?op=1" target="_blank">fast food salads</a> are burdened with fat-laden dressing, sodium-rich croutons, and other problematic toppings. Instead, make salad at home in the morning, so you can just grab it and go in the afternoon.</p>
                         </div>
-                        <div class="small-12 medium-5 columns">
+                        <div class="small-12 medium-6 columns">
                             <div class="section-image" data-420p="margin-left[swing]:-100%;" data-440p="margin-left[swing]:0;">
                                 <img src="img/salad.png">
                             </div>
@@ -183,13 +191,15 @@
                     <div class="run">
                         <div class="small-12 medium-6 columns">
                             <div class="run-line">
-                                <div class="running-man" id="run4" data-420p="" data-_box-420p=""></div>
+                                <div class="running-man" id="run4" data-650p="" data-_box-650p=""></div>
                             </div>
                         </div>
                         <div class="small-12 medium-6 columns">
                             <div class="run-counter">
-                                <h2>Run <span id="count4">0</span> Miles</h2>
-                                <div class="ingredients"><p>Bacon Ranch Crispy Chicken w/ dressing from McDonald’s is 570 calories = 4.2 miles</p></div>
+                                <div class="ingredients">
+                                    <h3>Bacon Ranch Crispy Chicken w/ <br>dressing from McDonald’s</h3>
+                                        <p>570 calories = Run <span class="count" id="count4">0</span> Miles</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -207,7 +217,7 @@
                             <h2>Frozen Meals</h2>
                             <p>Even foods that are labeled as “healthy” or “light” can contain high levels of sodium, sugar, and preservatives. When you have some free time, make your own meals at home and freeze them. Then it will be easy to thaw and serve on those busy evenings.</p>
                         </div>
-                        <div class="small-12 medium-5 columns">
+                        <div class="small-12 medium-6 columns">
                             <div class="section-image" data-530p="margin-right[swing]:-100%;" data-545p="margin-right[swing]:0;">
                                 <img src="img/frozen.png">
                             </div>
@@ -222,13 +232,15 @@
                         <div class="run">
                             <div class="small-12 medium-6 columns">
                                 <div class="run-line">
-                                    <div class="running-man" id="run5" data-545p="" data-_box-545p=""></div>
+                                    <div class="running-man" id="run5" data-800p="" data-_box-800p=""></div>
                                 </div>
                             </div>
                             <div class="small-12 medium-6 columns">
                                 <div class="run-counter">
-                                   <h2>Run <span id="count5">0</span> Miles</h2>
-                                    <div class="ingredients"><p>Frozen Personal Pepperoni Pizza from DiGiorno’s is 770 calories = 5.7 miles</p></div>
+                                    <div class="ingredients">
+                                        <h3>Frozen Personal Pepperoni <br>Pizza from DiGiorno’s</h3> 
+                                        <p>770 calories = Run <span class="count" id="count5">0</span> Miles</p>
+                                    </div>
                                 </div>
                             </div>
                             
@@ -249,7 +261,7 @@
 
                             <p>Going to grab a sports drink to quench your thirst and replenish your electrolytes after a workout? You may replace all those calories you just burned! There’s very little evidence that sports drinks have a positive effect on your health. Have a glass of water or <a href="http://www.fitnessmagazine.com/recipes/healthy-eating/superfoods/chocolate-milk-after-workout/" target="_blank">chocolate milk</a> instead!</p>
                         </div>
-                        <div class="small-12 medium-5 columns">
+                        <div class="small-12 medium-6 columns">
                             <div class="section-image" data-630p="margin-left[swing]:-100%;" data-650p="margin-left[swing]:0;">
                                 <img src="img/sportsdrink.png">
                             </div>
@@ -262,13 +274,15 @@
                     <div class="run">
                         <div class="small-12 medium-6 columns">
                             <div class="run-line">
-                                <div class="running-man" id="run6" data-650p="" data-_box-650p=""></div>
+                                <div class="running-man" id="run6" data-940p="" data-_box-940p=""></div>
                             </div>
                         </div>
                         <div class="small-12 medium-6 columns">
                             <div class="run-counter">
-                                <h2>Run <span id="count6">0</span> Miles</h2>
-                                <div class="ingredients"><p>32 oz. bottle of Gatorade Thirst Quencher is 213 calories = 1.6 miles</p></div>
+                                <div class="ingredients">
+                                    <h3>32 oz. bottle of Gatorade Thirst Quencher </h3> 
+                                        <p>213 calories = Run <span class="count" id="count6">0</span> miles</p>
+                                </div>
                             </div>
                         </div>
                     </div>    
@@ -278,38 +292,23 @@
             <div class="arrow-nav"><a href="#home" data-menu-top="0"><img src="img/arrow-light.png" id="back-home" alt=""></a></div>
             
             <div id="footer">
-                <a href="http://www.fastmed.com" target="_blank"><img src="img/fm-logo.png" alt=""></a>
-                <div id="contact">
                     <a href="http://www.fastmed.com" target="_blank">Visit Us at www.FastMed.com</a>
                     <div id="locations-finder">
                          <p>Find the nearest location</p> 
-                        <form id="locations-form">
-                            <input type="text" class="text" id="zip" name="zip" value="" placeholder="Zip Code" maxlength="5" required>
-                            <input type="submit" class="submit button" value="Find Locations" id="zipSearch">
-                        </form>
                     </div>
-                </div>
             </div>
         </section>
         
     
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+<!--
         
         <div id="progress" data-0="width:0%;" data-end="width:100%;"></div>
-    <!-- <div id="loader-wrapper">
-        <div class="loader-section">
-            <div id="loading"></div>
-        </div>
-    </div> -->
+        <div id="loader-wrapper">
+            <div class="loader-section">
+                <div id="loading"></div>
+            </div>
+        </div> 
+-->
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
