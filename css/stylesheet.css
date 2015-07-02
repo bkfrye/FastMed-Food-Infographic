@@ -1130,30 +1130,9 @@ section {
   z-index: 10;
   margin: 0;
   padding: 0;
-  background-image: url(../img/background.png);
+  background-image: url(../img/background.gif);
   background-repeat: no-repeat;
-  background-position: center;
-  -webkit-animation: background 2s linear infinite;
-  -moz-animation: background 2s linear infinite;
-  animation: background 2s linear infinite; }
-
-@-webkit-keyframes background {
-  0% {
-    background-position: left; }
-  100% {
-    background-position: right; } }
-
-@-moz-keyframes background {
-  0% {
-    background-position: left; }
-  100% {
-    background-position: right; } }
-
-@keyframes background {
-  0% {
-    background-position: left; }
-  100% {
-    background-position: right; } }
+  background-position: center; }
   #home .white {
     display: none; }
   #home #home-content {
