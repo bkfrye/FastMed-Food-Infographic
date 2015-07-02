@@ -1089,7 +1089,8 @@ section {
     text-align: center;
     position: absolute;
     bottom: 18px;
-    left: 50%;
+    left: 1%;
+    right: 1%;
     -webkit-animation: pulse 1.2s ease-in-out infinite;
     -moz-animation: pulse 1.2s ease-in-out infinite;
     animation: pulse 1.2s ease-in-out infinite; }
@@ -1153,6 +1154,8 @@ section {
     background-position: left; }
   100% {
     background-position: right; } }
+  #home .white {
+    display: none; }
   #home #home-content {
     text-align: center;
     position: relative; }
@@ -1191,8 +1194,8 @@ section {
     right: -47px;
     z-index: -1; }
   #home .home-running-man {
-    height: 420px;
-    width: 380px;
+    height: 300px;
+    width: 216px;
     margin: 0 auto;
     background-image: url("../img/running-sprite-large.png");
     background-repeat: no-repeat;
@@ -1257,20 +1260,12 @@ section {
 
 #last {
   z-index: 4; }
-  #last img {
+  #last .section-image img {
     -webkit-transform: rotate(35deg);
     -moz-transform: rotate(35deg);
     -ms-transform: rotate(35deg);
     -o-transform: rotate(35deg);
     transform: rotate(35deg); }
-  #last .arrow-nav {
-    z-index: 99999999; }
-    #last .arrow-nav img {
-      -webkit-transform: rotate(180deg);
-      -moz-transform: rotate(180deg);
-      -ms-transform: rotate(180deg);
-      -o-transform: rotate(180deg);
-      transform: rotate(180deg); }
   #last #footer {
     width: 100%;
     height: 70px;
@@ -1284,3 +1279,81 @@ section {
       color: #474398; }
     #last #footer img {
       float: left; }
+    #last #footer .footer-nav {
+      z-index: 99999999;
+      float: right; }
+      #last #footer .footer-nav img {
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        transform: rotate(180deg); }
+
+@media (max-width: 40em) {
+  .header {
+    display: none; }
+  #home {
+    background-image: none;
+    background-color: #474398; }
+    #home .white {
+      display: block;
+      margin: 0 auto;
+      background-color: #fff;
+      height: 60px; }
+    #home .container {
+      top: 0; }
+  .home-running-man {
+    display: none; }
+  .running-man {
+    background-image: url(../img/run-sprite-light.png);
+    position: relative;
+    margin: 0 auto;
+    display: block;
+    -webkit-animation: play 0.8s steps(15) infinite;
+    -moz-animation: play 0.8s steps(15) infinite;
+    animation: play 0.8s steps(15) infinite;
+    height: 95px;
+    width: 85px; }
+  #ribbon {
+    background-color: none; }
+  #ribbon:before, #ribbon:after {
+    display: none; }
+  .container {
+    width: 100%;
+    padding: 0;
+    top: 5%;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0); }
+  .section-image {
+    display: none; }
+  section {
+    padding: 8px; }
+    section .run .run-line {
+      display: none; }
+    section .section-image img {
+      height: 100px; }
+    section .section-title h2 {
+      font-size: 1.7em;
+      margin-bottom: 10px;
+      text-align: center; }
+    section .run {
+      margin-top: 14px; }
+    section h3 {
+      font-size: 1em; }
+    section p {
+      font-size: 1em; }
+    section .calories {
+      font-size: 2em; }
+  #last .footer {
+    position: relative; } }
+
+@media (min-width: 40.063em) and (max-width: 63.613em) {
+  section h2 {
+    font-size: 2em; }
+  section h3 {
+    font-size: 1em; }
+  section p {
+    font-size: 1em; } }
